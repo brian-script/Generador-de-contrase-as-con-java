@@ -7,17 +7,17 @@ public class generador {
 		String caracteres = "qwertyuiopasdfghjklñzxcvbnm1234567890";
 		int contador = 0;
 		int digitos = 10;
+		String Contraseña = "";
 
 		while (contador <= digitos) {
-			
-			String Contraseña = "";
-	    	//System.out.println(caracteres.charAt(2));
-			Contraseña = Contraseña + caracteres.charAt(2);
+				
+			Contraseña = Contraseña + caracteres.charAt(random.nextInt(caracteres.length()));
 			contador = contador + 1;
-			System.out.println(Contraseña);		
+					
+
 		}
 	
-	
+		System.out.println(Contraseña);
 	
 
 	}
